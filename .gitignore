@@ -1,0 +1,10 @@
+.env
+*.ttf
+resources
+examples
+test.*
+TODO.md
+img.jpg
+image.png
+.idea
+__pycache__
