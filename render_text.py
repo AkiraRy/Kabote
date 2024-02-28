@@ -1,8 +1,10 @@
+import sys
+# note add font selector
 from PIL import Image, ImageDraw, ImageFont
 import os
 from io import BytesIO
 
-TOP_PADDING_IN_PIXELS = 6
+TOP_PADDING_IN_PIXELS = -25
 BOTTOM_PADDING_IN_PIXELS = 6
 BASE_LEFT_PADDING_IN_PIXELS = 6
 BASE_RIGHT_PADDING_IN_PIXELS = 6
@@ -42,3 +44,6 @@ def render(text, text_color=(0, 0, 0), background_color=(255, 255, 255), font_si
 
     # Return the bytes from the buffer
     return buffer.getvalue()
+
+
+# render("夏休み")
